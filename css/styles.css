@@ -101,6 +101,8 @@ line-height: 1.2;
 .link-icon{
 fill: currentColor;
 margin-right: 10px;
+transition-property: text-shadow;
+transition-duration: 250ms;
 
 }
 .link-icon:hover,
@@ -118,6 +120,8 @@ line-height: 1.14px;
 letter-spacing: 0.02em;     
 content: "";
 position: relative;
+transition-property: color;
+transition-duration: 250ms;
 
 }
 
@@ -142,6 +146,8 @@ border-radius: 2px;
 display: flex;
 align-items: center;
 justify-content: center;
+transition-property: color;
+transition-duration: 250ms;
 }
 
 .link.current {
@@ -298,8 +304,11 @@ width: 100%;
 height: 100%;
 background-color: rgba(33, 150, 243, 0.9);
 transform: translateY(100%);
-transition: transform 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
-/* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+transition-property: transform;
+transition-duration: 250ms;
+/* transition: transform 250ms ease cubic-bezier(0.4, 0, 0.2, 1); */
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .project-list:hover .description-text {
